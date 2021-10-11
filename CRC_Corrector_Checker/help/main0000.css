@@ -1,0 +1,146 @@
+/* Блок переопределения тегов */
+  A:link {text-decoration: underline; color: #FF6600;}
+  A:visited {text-decoration: underline; color: #DD4400;}
+  A:active {text-decoration: underline; }
+  A:hover {text-decoration: underline; color: red;}
+
+body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: normal; color: #000000; line-height: 17px; scrollbar-3dlight-color: #FFFFFF; scrollbar-arrow-color: #FFFFFF; scrollbar-base-color: #FFFFFF; scrollbar-darkshadow-color: #FFFFFF; scrollbar-face-color: #080842; scrollbar-highlight-color: #080842; scrollbar-shadow-color: #080842; scrollbar-track-color: #080842;}
+
+td { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #000000}
+
+/* Блок текстовых стилей */
+.textHeader {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-style: normal; line-height: 20px; letter-spacing: 0px}
+.textHeader:Link {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-style: normal; line-height: 20px; letter-spacing: 0px}
+.textHeader:Visited {font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold; font-style: normal; line-height: 20px; letter-spacing: 0px}
+.textHeader:Hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-style: normal; line-height: 20px; letter-spacing: 0px}
+.textHeader:Active {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-style: normal; line-height: 20px; letter-spacing: 0px}
+
+.textHeader1White { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+.textHeader1White:Link {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+.textHeader1White:Visited {font-family: Verdana, Arial, Helvetica, sans-serif;  font-size: 12px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+.textHeader1White:Hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; color: #FFFFFF}
+.textHeader1White:Active {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; color: #FFFFFF}
+.header1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; color: #FFFFFF}
+
+.textHeader2Blue { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-weight: bold; color: #294F88; letter-spacing:1px;}
+.header2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-weight: bold; color: #294F88; letter-spacing:1px;}
+
+.textHeader3Blue {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: normal; color: #294F88;}
+.header3 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; font-style: normal; font-weight: normal; color: #294F88;}
+
+.textHeader4Black {font-family: Arial; font-size: 17px; font-style: normal; font-weight: bold; color: #00000; line-height: 20px;letter-spacing:1px;}
+.header4 {font-family: Arial; font-size: 17px; font-style: normal; font-weight: bold; color: #00000; line-height: 20px;letter-spacing:1px;}
+
+.textAuthor {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bold; color: #FFFFFF; line-height: 14px;}
+.author {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bold; color: #FFFFFF; line-height: 14px;}
+
+.textDate {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; font-weight: bold; color: #FFFFFF; line-height: 14px;}
+.date {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; font-weight: bold; color: #FFFFFF; line-height: 14px;}
+
+.textBodyLeft {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 14px;}
+.body-left {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #FFFFFF; line-height: 14px;}
+
+.textBodyHome { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+
+.textBodyHomeAnnonce { font-family: Arial, Helvetica, Verdana, sans-serif; font-style: normal; font-weight: normal; color: white; text-decoration: none; text-align: left; line-height: 12px; }
+
+.body-home { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+
+.textBody { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: normal; color: #000000; line-height: 17px;}
+.body { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: normal; color: #000000; line-height: 17px;}
+
+.textBodySm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: normal; color: #000000; line-height: 13px;}
+.body-sm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: normal; color: #000000; line-height: 13px;}
+
+.textBodySm1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #000000; line-height: 15px;}
+.body-sm1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #000000; line-height: 15px;}
+
+.textBodySm2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; font-weight: normal; color: #000000;}
+.body-sm2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; font-weight: normal; color: #000000;}
+
+.archive { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+
+.textTop { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none}
+.textTop A:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bolder; color: #FFFFFF; text-decoration: none}
+.textTop A:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bolder; color: #ffffff; text-decoration: none;}
+.textTop A:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bolder; color: #FFFFFF; text-decoration: none}
+.top { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none}
+.top A:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bolder; color: #FFFFFF; text-decoration: none}
+.top A:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bolder; color: #ffffff; text-decoration: none;}
+.top A:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bolder; color: #FFFFFF; text-decoration: none}
+
+.textMenuHeader { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bolder; color: #FFFFFF ; padding-left: 10px; letter-spacing:1px; text-decoration: none}
+.textMenuHeader A:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bolder; color: #FFFFFF ; letter-spacing:1px; text-decoration: none}
+.textMenuHeader A:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; letter-spacing:1px; text-decoration: none; color: #ffffff;}
+.textMenuHeader A:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bolder; color: #FFFFFF ; letter-spacing:1px; text-decoration: none}
+.menu-header { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bolder; color: #FFFFFF ; padding-left: 10px; letter-spacing:1px; text-decoration: none}
+.menu-header A:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bolder; color: #FFFFFF ; letter-spacing:1px; text-decoration: none}
+.menu-header A:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; letter-spacing:1px; text-decoration: none; color: #ffffff;}
+.menu-header A:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bolder; color: #FFFFFF ; letter-spacing:1px; text-decoration: none}
+
+.textMenu    { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+.textMenu A:link { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+.textMenu A:hover { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+.textMenu A:visited { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+.menu    { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+.menu A:link { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+.menu A:hover { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+.menu A:visited { font-size: 11px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; font-weight: bold; letter-spacing:0px; line-height: 15px;}
+
+.textMenuSm    { font-size: 7px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal;}
+.menu-sm    { font-size: 7px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal;}
+
+.textMenuSmMag    { font-size: 7px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+.textMenuSmMag A:link   { font-size: 8px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+.textMenuSmMag A:hover   { font-size: 8px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+.textMenuSmMag A:visited   { font-size: 8px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+.menu-sm-mag    { font-size: 7px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+.menu-sm-mag A:link   { font-size: 8px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+.menu-sm-mag A:hover   { font-size: 8px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+.menu-sm-mag A:visited   { font-size: 8px; color: #ffffff; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none; font-style: normal; text-transform: uppercase; font-weight: bold;}
+
+.textVote td { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: bold; color: #FFFFFF; text-decoration: none;}
+
+.btnAnnonce {margin: 10px 0 3px 0; font-weight: bold; font-size: 10px; font-family: arial; text-align: center; white-space: nowrap; clear: all;}
+.btnAnnonce span {padding: 2px 5px; border:1px solid white; margin: 5px; background-color:#294f88;white-space: nowrap;}
+.btnAnnonce a, .btnAnnonce a:link, .btnAnnonce a:visited, .btnAnnonce a:hover {color: white; text-decoration: none;}
+
+/* Блок стилей оформления*/
+.decorCellBlack { background-color: #000000}
+.cell-black { background-color: #000000}
+
+.decorCellWhite { background-color: #FFFFFF}
+.cell-white { background-color: #FFFFFF}
+
+.decorCellBlue { background-color: #294F88}
+.cell-blue { background-color: #294F88}
+
+.decorCellDblue { background-color: #080842}
+.cell-dblue { background-color: #080842}
+
+.decorBodyCell { padding-top: 0px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px}
+.decorBodyCell { padding-top: 0px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px}
+
+.decorBodyCell1 { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px}
+.decorBodyCell1 { padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px}
+.textVtrezlink {font-weight: bold;}
+
+.col-xa {font-size: 5px; color: #080842; margin: 0px; padding: 0px; display: none; }
+.col-xa a, .col-xa a:hover, .col-xa a:visited, .col-xa a:active {color: #080842; cursor: default;}
+
+/* Блок стилей объектов с идентификаторами*/
+#idmainMenu  { z-index: 0; left: 120px; top: 0px; text-decoration: none }
+#idmagazineMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 160px;}
+#idcolumnsMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 191px;}
+#idhackMenu  { z-index: 2; visibility: hidden; position: absolute ; left: 120px; top: 222px;}
+#iddefenceMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 253px;}
+#idambMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 298px;}
+#idhardMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 343px;}
+#idsoftMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 360px;}
+#idhumorMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 436px;}
+#idpornoMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 467px; }
+#idfreeMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top: 498px;}
+#idmp3Menu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top:546px;}
+#idxshopMenu  { z-index: 2; visibility: hidden; position: absolute; left: 120px; top:577px;}
+#votationholder {background-color: #080842;}
+#votationholder td {color: #FFFFFF;}

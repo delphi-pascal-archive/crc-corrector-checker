@@ -1,0 +1,1005 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="searchtitle" content="Журнал Хакер">
+<meta name="description" content="Сайт журнала «Хакер» - самый авторитетный ресурс рунета, посвященный вопросам информационной безопасности">
+
+<link rel="alternate" type="application/rss+xml" title="Все посты" href="/articles/rss/default.asp" />
+<link rel="alternate" type="application/rss+xml" title="Xakep - Новости" href="/articles/rss/default.asp?rss_cat=news" />
+<link rel="alternate" type="application/rss+xml" title="Xakep - Файлы" href="/articles/rss/default.asp?rss_cat=soft" />
+<link rel="alternate" type="application/rss+xml" title="Xakep - Уязвимости" href="/articles/rss/default.asp?rss_cat=hack" />
+<link rel="alternate" type="application/rss+xml" title="Xakep - Статьи" href="/articles/rss/default.asp?rss_cat=post" />
+
+<link rel="SHORTCUT ICON" href="../../i/xakep.ico">
+<link rel="stylesheet" href="main0000.css" type="text/css">
+<script language="JavaScript" src="scripts0.js"></script>
+<script language="JavaScript" src="scripts-.js"></script>
+
+<!--cache:96h; hits:2-->
+
+<style type="text/css">
+<!--
+-->
+</style>
+<title>Xakep Online -&gt; CRC: как защитить программу</title>
+<meta name="keywords" content="CRC: как защитить программу ">
+
+</head>
+  
+  <body bgcolor="#080842" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <script type='text/javascript' src='jsserv00.js' defer='defer'></script>
+  
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1" align="right" valign="top">
+
+<!-- =========top begin============ -->
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111">
+  <tr>
+    <td width="100%">
+
+
+
+      <table width="770" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="769" height="1" colspan="6">
+            <img src="white_po.gif" width="769" height="1"></td>
+          <td width="1" height="79" rowspan="5">
+            <img src="white_po.gif" width="1" height="79"></td>
+        </tr>
+        <tr>
+          <td width="1" height="78" rowspan="4">
+            <img src="white_po.gif" width="1" height="78"></td>
+          <td width="185" height="54">
+            <img src="Top_left.gif" width="185" height="54"></td>
+          <td width="24" height="54">
+            <img src="Top_lefu.gif" width="24" height="54"></td>
+          <td width="86" height="60" rowspan="2">
+            <img src="Top_midl.gif" width="86" height="60"></td>
+          <td width="5" height="60" rowspan="2">
+            <img src="Top_midm.gif" width="5" height="60"></td>
+          <td width="468" height="60" rowspan="2">
+            <iframe scrolling="no" frameborder="0" height="60" width="468" marginwidth="0" marginheight="0" src="http://banner.glc.ru/code/common/ads/banman/include/iframe_bann.asp?width=468&height=60&sname=www.xakep.ru&sport=80&path=/post/21788/default.asp"></iframe></td>
+            
+          </td>
+        </tr>
+        <tr>
+          <td width="185" height="6" bgcolor="#00007E"></td>
+          <td width="24" height="24" rowspan="3">
+            <img src="Midle_le.gif" width="24" height="24"></td>
+        </tr>
+        <tr>
+          <td width="185" height="12" bgcolor="#00007E">
+            <p align="center">
+                  <img border="0" src="num_1000.gif" width="26" height="12"><img border="0" src="num_poin.gif" width="4" height="12"><img border="0" src="num_2000.gif" width="26" height="12"><img border="0" src="num_poin.gif" width="4" height="12"><img border="0" src="num_3000.gif" width="26" height="12"><img border="0" src="num_poin.gif" width="4" height="12"><img border="0" src="num_4000.gif" width="26" height="12"><img border="0" src="num_poin.gif" width="4" height="12"><img border="0" src="num_5000.gif" width="26" height="12"><img border="0" src="num_poin.gif" width="4" height="12"><img border="0" src="num_6000.gif" width="18" height="12"></td>
+          <td width="86" height="18" rowspan="2">
+            <img src="Midle_mi.gif" width="86" height="18"></td>
+          <td width="473" height="18" colspan="2" rowspan="2">
+            <img src="Midle_ri.gif" width="473" height="18"></td>
+        </tr>
+        <tr>
+          <td width="185" height="6" bgcolor="#00007E"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%">
+      <table width="770" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="339" height="1" colspan="2">
+            <img src="white_po.gif" width="339" height="1"></td>
+          <td width="431" height="1" colspan="2">
+            <img src="logo_rig.gif" width="431" height="1"></td>
+        </tr>
+        <tr>
+          <td width="279" height="57"><a href="http://www.xakep.ru/local/redirect.asp?url=default.asp"><img src="xakep_lo.gif" width="279" height="57" border="0"></a></td>
+          <td width="60" height="57"><img src="sign_def.gif" width="60" height="57" border="0"></td>
+          <td width="184" height="57" valign="top">
+            <img src="center_m.gif" width="184" height="57"></td>
+          <td width="247" height="57" valign="top">
+            <img src="center_r.gif" width="247" height="57"></td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%">
+<!-- =========top menu start============ -->
+
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="1" height="23"><img src="white_po.gif" width="1" height="23"></td>
+          <td width="45" height="23" class="decorCellBlack" align="center" valign="middle"><span class="textTop"><a href="http://www.xakep.ru/default.asp">HOME</a></span></td>
+          <td width="1" height="23"><img src="white_po.gif" width="1" height="23"></td>
+          <td width="55" height="23" class="decorCellBlack" align="center" valign="middle"><span class="textTop"><a href="http://www.xakep.ru/local/search/default.asp">ПОИСК</a></span></td>
+          <td width="1" height="23"><img src="white_po.gif" width="1" height="23"></td>
+          <td width="36" height="23" class="decorCellBlack" align="center" valign="middle"><span class="textTop"><a href="http://www.xakep.ru/chat/xakep/login.aspx">ЧАТ</a></span></td>
+          <td width="1" height="23"><img src="white_po.gif" width="1" height="23"></td>
+          <td width="65" height="23" class="decorCellBlack" align="center" valign="middle"><span class="textTop"><a href="http://forum.xakep.ru/">ФОРУМЫ</a></span></td>
+          <td width="1" height="23"><img src="white_po.gif" width="1" height="23"></td>
+          <td width="70" height="23" class="decorCellBlack" align="center" valign="middle"><span class="textTop"><a href="http://www.xakep.ru/articles/common/recl.asp">РЕКЛАМА</a></span></td>
+          <td width="1" height="23"><img src="white_po.gif" width="1" height="23"></td>
+          <td width="80" height="23" class="decorCellBlack" align="center" valign="middle"><span class="textTop"><a href="http://www.xakep.ru/articles/common/info.asp">КОНТАКТЫ</a></span></td>
+          <td width="1" height="23"><img src="white_po.gif" width="1" height="23"></td>
+          <td width="93" height="23" class="decorCellBlack" align="center" valign="middle"><span class="textTop"><a href="http://www.xakep.ru/local/admin/menu.asp">ДЛЯ АВТОРОВ</a></span></td>
+
+          <td width="22" height="23" align="left"><img src="down_mid.gif" width="22" height="23"></td>
+          <td width="297" height="23"><img src="down_rig.gif" width="297" height="23"></td>
+
+        </tr>
+        <tr>
+          <td width="770" height="1" colspan="16">
+            <img src="white_po.gif" width="770" height="1"></td>
+        </tr>
+      </table>
+<!-- =========top menu end============ -->
+    </td>
+  </tr>
+</table>
+
+<!-- =========top end============ -->
+
+<table width="770" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="121" align="right" valign="top">
+      
+<!-- ==========menu begin========= --><div id="idmainMenu">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="decorCellBlue">
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+          <td align="left" valign="middle" height="30" class="textMenuHeader" onmouseover="showLayer('idmagazineMenu')" onmouseout="btnTimer();"><img src="arrow-wh.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/magazine/default.asp">ЖУРНАЛ</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+          <td align="left" valign="middle" class="textMenuHeader" height="30" onmouseover="showLayer('idcolumnsMenu');" onmouseout="btnTimer();"><img src="arrow-wh.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/editor/default.asp">КОЛОНКИ</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30" onmouseover="showLayer('idhackMenu');" onmouseout="btnTimer();"><img src="arrow-wh.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/hack/default.asp">ВЗЛОМ</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><img src="fon00000.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/defence/default.asp">ЗАЩИТА</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="44"><img src="fon00000.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/amb/default.asp">ЗАПАДЛО-<br>СТРОЕНИЕ</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><img src="fon00000.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/hard/default.asp">ЖЕЛЕЗО</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30" onmouseover="showLayer('idsoftMenu');" onmouseout="btnTimer();"><img src="arrow-wh.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/soft/default.asp">СОФТ</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><a href="http://www.xakep.ru/articles/os/default.asp">ОС</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><img src="fon00000.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/humor/default.asp">ЮМОР</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30" ><a href="http://www.xakep.ru/articles/porno/default.asp">STUFFF</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><a href="http://www.xakep.ru/articles/free/default.asp">СЕТЬ</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><a href="http://www.xakep.ru/articles/links/default.asp">ЛИНКИ</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30" onmouseover="showLayer('idmp3Menu');" onmouseout="btnTimer();"><img src="arrow-wh.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/mp3/default.asp">MP3</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="44" onmouseover="showLayer('idxshopMenu');" onmouseout="btnTimer();"><img src="arrow-wh.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/xshop/default.asp">Товары в<br>Стиле "Х"</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><img src="fon00000.gif" width="7" height="12" align="right"><a href="http://www.gameland.ru/articles/common/anketa.asp">Вакансии</a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td class="textMenuHeader" align="left" valign="middle" height="30"><img src="fon00000.gif" width="7" height="12" align="right"><a href="http://www.xakep.ru/articles/rss/"><img src="rss20000.gif" border="0"></a></td>
+        </tr>
+        <tr>
+          <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+
+          <td align="left" valign="middle" height="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1" border="0"></td>
+        </tr>
+
+
+      </table></div>
+      <img src="menu-bot.gif" width="121" height="19"><br>
+<!-- =========menu banners start============ -->
+
+        <center>
+        
+        </center>
+        
+      <br>
+<!--****этот баннер убрать 9 августа****>
+    <center><a href="http://banner.glc.ru/code/common/ads/banman/click.asp?id=737"><img src="../../i/MarsIT.gif" width="100" height="100" border="0"></a></center>
+<!-- -->
+<!-- =========menu banners end============ -->
+      <br>
+<center><a href="http://www.mconline.ru/" target="_blank"><img border="0" src="but-mc00.gif" width="81" height="33"></a></center>
+      <br>
+      <br>
+      <img src="menu-bou.gif" width="19" height="121"><br>
+      <script>CallThisMenu();</script>
+      <!-- ==========menu end========= -->
+
+      </td>
+    
+    <td width="1" class="decorCellWhite"></td>
+    
+    <td align="left" valign="top"
+       class="decorCellWhite" background="../../i/fon-body.gif" >
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="left" valign="top" class="decorCellWhite">
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td background="../../i/header-01.gif" width="24"><img src="fon00000.gif" width="1" height="1"></td>
+    <td align="right" width="50%">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><span class="textHeader3Blue">&nbsp;Защита            </span>
+          </td>
+          <td width="32"><img src="header-0.gif" width="32" height="48" align="bottom"></td>
+        </tr>
+      </table>
+    </td>
+    <td background="../../i/header-03.gif" width="50%"><img src="fon00000.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td width="36"> <img src="header-1.gif" width="24" height="13"></td>
+    <td align="right" background="../../i/header-05_.gif"><img src="header-2.gif" width="31" height="13"></td>
+    <td><img src="fon00000.gif" width="1" height="1"></td>
+  </tr>
+</table><br>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top" class="decorBodyCell">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%" height="14" colspan="7" align="right"><img border="0" src="title_to.gif" width="104" height="14"></td>
+  </tr>
+  <tr>
+    <td width="1" height="6" bgcolor="#294F88"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="100%" height="6" colspan="5" align="left" background="../../i/top_blue_white.gif"><img border="0" src="top_blue.gif" width="73" height="6"></td>
+    <td width="1" height="6" bgcolor="#294F88"></td>
+  </tr>
+  <tr>
+    <td width="1" height="64" rowspan="2" bgcolor="#294F88"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="100%" height="38" colspan="4" style="padding-left: 10px; padding-top: 5px;"><span class="textHeader4Black">
+  <!-- titlepostbegin -->CRC: как защитить программу<!-- titlepostend -->
+</span>       </td>
+       <td width="118" height="38" align="right" valign="bottom"><img border="0" src="title_3_.gif" width="48" height="38"></td>
+       <td width="1" height="38" bgcolor="#294F88"><img src="fon00000.gif" width="1" height="1"></td>
+     </tr>
+     <tr>
+      <td width="100%" height="26" colspan="3">
+    <td width="26" height="26"><img border="0" src="title_li.gif" width="26" height="26"></td>
+    <td width="118" height="26" background="../../i/title_bottom_blue_white.gif"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" height="42" rowspan="2"><img src="fon00000.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td width="1" height="16"><img src="title_bo.gif" width="1" height="26"></td>
+    <td width="50%" height="16" background="../../i/title_bottom_blue_white.gif"></td>
+    <td width="128" height="16" valign="top"><img border="0" src="title_bp.gif" width="128" height="16"></td>
+    <td width="40%" height="16" background="../../i/title_bottom_blue_white.gif"></td>
+    <td width="26" height="16"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="118" height="16"><img src="fon00000.gif" width="1" height="1"></td>
+  </tr>
+</table>
+<span class="textBody">
+
+<table align="center" width="160">
+<tr>
+<td align="right">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7836709382083344";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="show_ads.js">
+</script>
+</tr>
+</td>
+</table>
+<br>
+<!-- bodypostbegin --><img align="right" src="title000.gif">
+<p>Всем нам свойственно ошибаться, но иногда мы вовремя обнаруживаем свои ошибки. Пусть ты не сможешь умножить в уме 790 г. колбасы на 134 рубля 50 копеек, но если продавщица говорит: «115 рублей, молодой человек», то ты можешь прикинуть (около 120 рублей умножить на 1/4 килограмма будет 30 рублей, 130 минус 30 — сто рублей) и понять, что эта добрая тетя пытается тебя обдурить, присвоив себе десятку.
+Компьютеры тоже ошибаются. Сбоит память, на винчестерах появляются бэдблоки, мыши в колодцах грызут телефонные кабели. Так в информацию вносятся ошибки, которые нужно обнаруживать и по возможности исправлять.<br>
+<br>
+Чтобы найти ошибку, к сообщению добавляют контрольную сумму (checksum). В самом простом случае это сумма всех байтов сообщения. Например:<br>
+<br>
+Сообщение: 12 34 56<br>
+Контрольная сумма: 12+34+56=102<br>
+<br>
+После передачи в это сообщение могут быть внесены помехи, например, так:<br>
+<br>
+Искаженное сообщение: 12 36 56, контрольная сумма 102<br>
+<br>
+Если теперь сложить байты сообщения, результат не совпадет с контрольной суммой. Так программа может сделать вывод, что данные были повреждены, и принять меры (например, еще раз запросить пакет TCP/IP или выдать сообщение, что архив поврежден).<br>
+<br>
+CRC, или циклический избыточный код, — это улучшенный (и усложненный) вариант контрольной суммы. В этой статье будет рассказано об алгоритме CRC32, который применяется в протоколе TCP/IP, архиваторах Zip и Rar. Затем я расскажу тебе, как защитить свою программу от модификаций, проверяя ее
+CRC.</p>
+<p><b>Чем плоха контрольная сумма</b></p>
+<p>Во-первых, если просто складывать байты, то старшие биты будут изменяться реже, чем младшие. То есть, если мы складываем<br>
+<br>
+12 34 56, контрольная сумма 102<br>
+12 34 56 23, контрольная сумма 125<br>
+12 34 56 23 45, контрольная сумма 170<br>
+<br>
+результат останется в пределах двух сотен. Если контрольная сумма записана в 32-разрядное или 64-разрядное слово, старшие байты будут содержать нули. Это не есть хорошо, так как все биты контрольной суммы должны быть равноценными.</p>
+<p>Во-вторых, сообщения с переставленными байтами будут иметь одну и ту же сумму:<br>
+<br>
+12 34 56, контрольная сумма 102<br>
+56 12 34, контрольная сумма 102<br>
+<br>
+Несмотря на все эти недостатки, разные варианты контрольной суммы используются довольно широко, например, в штрих-кодах (barcode). У меня в руках банка консервированной кукурузы, на которой написан такой штрих-код:<br>
+<br>
+5 998483 710125<br>
+<br>
+<img border="0" src="corn0000.jpg" width="324" height="241"><br>
+<br>
+Это код EAN-13 (тринадцать цифр). Правило для его проверки такое: сложи цифры на четных позициях, умножь сумму на три и добавь цифры на нечетных позициях. Должно получиться число, которое делится на десять:<br>
+<br>
+9 + 8 + 8+ 7 + 0 + 2 = 34<br>
+5 + 9 + 4 + 3 + 1 + 1 + 5 = 28<br>
+34 * 3 + 28 = 130, делится на 10<br>
+<br>
+А чтобы это условие выполнялось, последнюю цифру, 5, делают контрольной суммой. То есть складывают по этим правилам все остальные цифры, а последнюю цифру вычисляют как 10 минус последняя цифра суммы. Контрольная сумма нужна затем, чтобы сканер в супермаркете не считывал неправильный код если упаковка грязная или продавщица случайно закрыла код рукой. Если интересно, можешь проверить по этому правилу штрих-коды на любых упаковках пищевых продуктов (но не книг — у них другой код, ISBN).<br>
+<br>
+Есть очень простой, короткий и быстрый (примерно в 10 раз быстрее CRC) способ подсчета контрольной суммы. Берем по 4 байта из файла, и делаем с ними логическую операцию XOR. То, что получится в результате, — контрольная сумма.<br>
+<br>
+<font size="1" color="#008000">unsigned long XORCount(void* data, size_t bytesread)<br>
+// data — сообщение, size_t — его длина<br>
+{<br>
+  *(long*)(data + bytesread) = 0; // Подписать 4 нулевых байта<br>
+  bytesread /= sizeof(long);<br>
+  while(bytesread--)<br>
+     sum ^= *(long*)data, data+=sizeof(long);<br>
+     // Первые 4 байта XOR вторые 4 байта XOR третьи...<br>
+  return sum;<br>
+}</font><br>
+<br>
+В этой контрольной сумме все байты используются полностью, среди них нет более значимых или менее значимых. Теоретическая вероятность того, что контрольная сумма окажется правильной для испорченного файла — 1 шанс на 2 ^ 32. Но операция XOR обладает таким свойством, что A XOR A = 0. Поэтому для сообщений<br>
+<br>
+12 34 A6 7B  91 92 93 94  91 92 93 94<br>
+12 34 A6 7B  12 34 56 78  12 34 56 78<br>
+12 34 A6 7B  00 00 00 00  00 00 00 00<br>
+<br>
+контрольная сумма будет одинаковой, как и для любых других, содержащих четное число одинаковых четверок байт (или же просто 8, 16, 24 или 32 одинаковых байт). И если вместо NOP'ов записать в исполнимый файл нули или любые другие байты (но число байт обязательно кратно 8), то программа этого не обнаружит. Все это плохо, но не смертельно, поэтому этим алгоритмом вполне можно пользоваться, если нужна высокая скорость проверки.<br>
+<br>
+<b>Что такое CRC<br>
+</b><br>
+Запомни простую формулу: CRC = сообщение % полином<br>
+<br>
+То есть все сообщение (файл, архив) делим по модулю на некоторую константу (ее называют полиномом). Остаток от деления и есть CRC. О том, как весь файл можно разделить на число, я скажу чуть ниже, а пока — урок арифметики. Но не обычной арифметики, а полиномиальной.
+Что же это за арифметика такая? Это двоичная арифметика без переносов и заемов. Если сложить 1+1 в обычной двоичной арифметике, получится 10 (переносим единицу). Если вычесть 10–1, получится 1 (занимаем единицу).<br>
+<br>
+В полиномиальной арифметике:<br>
+<br>
+0+0 = 0                        0–0=0<br>
+0+1 = 1                        0–1=1 (не занимаем!)<br>
+1+0 = 1                        1–0=1<br>
+1+1 = 0 (не переносим!)        1–1=0<br>
+<br>
+Видно, что сложение в полиномиальной арифметике — это то же, что и вычитание. И если тебя мучили таблицами истинности на уроках информатики, ты сразу вспомнишь, что это операция XOR. В учебниках по дискретной математике ее обозначают кружком с косым крестиком внутри. Я буду обозначать эту операцию крышкой ^, как в Си.
+В полиномиальной арифметике 100 плюс 110 равно 10, но 100 минус 110 тоже равно 10. Нет ни знака, ни определенного порядка битов. Все биты равнозначны, и это очень важное свойство для CRC. Если переставить несколько битов в обоих слагаемых, те же биты будут переставлены в сумме:<br>
+<br>
+1010 ^ 1100=01 10, поменяем местами первые два и последние два бита:<br>
+1010 ^ 0011=10 01 (а теперь сравни 19+34=53 и 91+43=134, а не 35).<br>
+<br>
+Биты можно представить как коэффициенты многочлена (полинома). Поэтому арифметику называют полиномиальной, а делитель в алгоритмах CRC — полиномом. В общем, все это математические заморочки, но знать будет не лишнее.<br>
+<br>
+Умножение в полиномиальной арифметике нам не понадобится, а вот о делении нужно сказать подробнее. Делим, как во втором классе, уголком, но вместо вычитания используем операцию XOR:<br>
+Сообщение: 1101010<br>
+Полином:   101<br>
+<br>
+ 1101010<br>
+^101<br>
+====<br>
+  111010<br>
+ ^101<br>
+  ===<br>
+   10010<br>
+  ^101<br>
+   =====   получили 0, сдвигаемся на 2 бита<br>
+     110<br>
+    ^101<br>
+     ===<br>
+      11<br>
+<br>
+Готово! CRC = 11<br>
+<br>
+Именно так считают CRC. Заметь, что в каждом столбике мы вычитаем старшие биты 1–1=0. В следующих битах могут быть любые числа. Один раз мы получили ноль в старшем бите, и нам пришлось сдвинуться вправо на 2 бита, а не на один. Итак, можно записать такой алгоритм (это не рабочий код, он только показывает алгоритм):<br>
+<br>
+<font size="1" color="#008000">// data - сообщение (битовая строка), POLY - полином<br>
+while(length(data) > length(POLY)){<br>
+  r = TOPBIT(data); // Выделяем старший бит data<br>
+  data <<= 1;       // И выкидываем его из основного числа data<br>
+  if(r)<br>
+    data ^= POLY;<br>
+}</font><br>
+<br>
+В столбиках мы сдвигали полином 101 вправо, каждый раз вычитая его из сообщения. В этом алгоритме полином остается на месте, но мы «двигаем» делимое влево. Если старший бит r равен нулю, мы сдвигаемся еще на один бит, не вычитая POLY. Константа POLY равна полиному без старшей единицы, то есть 01. Обрати на это внимание: первую единицу писать незачем, так как двоичное число всегда начинается с единицы.
+Как работает этот код, легче понять на примере. Возьмем то же сообщение 1101010 и тот же полином 101 (сравни со столбиком выше):<br>
+<br>
+Шаг 1. r = 1   // Отделили первый бит<br>
+ data = 101010 // r=1, поэтому делаем XOR<br>
+       ^01<br>
+        ======<br>
+        111010<br>
+Шаг 2. r = 1<br>
+ data = 11010<br>
+       ^01<br>
+        =====<br>
+        10010<br>
+Шаг 3. r = 1<br>
+ data = 0010<br>
+       ^01<br>
+        ====<br>
+        0110<br>
+Шаг 4. r = 0   // XOR не делаем<br>
+ data = 110<br>
+Шаг 5. r = 1<br>
+ data = 10<br>
+       ^01<br>
+        ==<br>
+        11<br>
+<br>
+Итак, алгоритм в целом понятен: делим нацело data на POLY, получаем crc. И при делении 0–1=1, 1+1=0 без переноса.</p>
+<p>Сложность состоит в том, что сообщение может весить пару мегабайт. Как же разделить его на полином? Заметь, что при каждом проходе цикла у нас меняются только 2 первых бита data. Значит, можно проходить по
+всему сообщению, читая в каждый момент времени небольшую порцию данных (в нашем случае — первые два бита).<br>
+<br>
+<b>Как работает табличная реализация</b><br>
+<br>
+Но у этого алгоритма есть еще один недостаток: он обрабатывает по одному биту сообщения. Например, для мегабайтного файла он сделает 8 миллионов проходов цикла, и каждый раз будет извлекать отдельные биты. Согласись, это никуда не годится!
+Есть общепринятый трюк, который ускоряет подсчет CRC чуть ли не в десятки раз. Идея такова: будем обрабатывать по байту за один проход цикла. Когда мы делим байт на полином, у нас в остатке получается некоторое число, причем оно не зависит от других байтов сообщения. Вот это число мы можем хранить в таблице для каждого делимого байта. Имея такую таблицу, будем получать CRC для каждого байта за один проход.
+Сейчас я расскажу, как построить такую таблицу и что конкретно в ней будет находиться. Чтобы не маяться с длинными таблицами, возьмем байт, равный 3 битам, и короткий полином 111. Пусть сообщение состоит из 5 бит, назовем их abcde. Пройдем наш старый алгоритм по шагам:<br>
+<br>
+Шаг 1. if(a)   // Запись условная, это не рабочий код<br>
+         bc ^= 11;<br>
+Шаг 2. if(b)<br>
+         cd ^= 11; // Полином 110 без первой единицы<br>
+Шаг 3. if(c)<br>
+         de ^= 11;<br>
+<br>
+Когда мы подсчитали bcd и перешли на второй шаг, бит a уже не нужен, и на дальнейшие подсчеты он никак не влияет. Когда дошли до последнего шага, оказались ненужными биты a и b. А после третьего шага сыграл свою роль бит c, который теперь сходит со сцены.
+То, что поменялись биты abc, уже не важно, потому что на четвертом, пятом и так далее шаге они не будут использоваться. Но на этих трех шагах как-то изменились биты de. И изменились они в зависимости от битов abc. Давай переберем все значения abc, начиная с 000 и до 111.<br>
+<br>
+000 (a=0, b=0, c=0) — ни одно из условий не выполняется, поэтому биты def не изменились.<br>
+001 (a=0, b=0, c=1) — условие if(c) выполнилось. Я запишу это так:<br>
+abc<br>
+001def<br>
+  ^11<br>
+010 — условие if(b) выполнилось, но после добавления единицы к c выполнилось также if(c). Запишем под чертой результат операции XOR над двумя соответствующими числами в битах de:<br>
+abc<br>
+010de<br>
+ ^11<br>
+  ^11<br>
+   ==<br>
+   01<br>
+011 — выполнилось условие if(b), но бит c был при этом обнулен, поэтому if(c) не сработало:<br>
+abc<br>
+011de<br>
+ ^11<br>
+   ==<br>
+   10<br>
+100 — сработало условие if(a), которое вызвало if(b). В результате бит d будет подвергнут операции XOR с единицей (далее будем говорить проще, XOR'ится с единицей):<br>
+abc<br>
+100de<br>
+^11<br>
+ ^11<br>
+   ==<br>
+   10<br>
+101 — аналогично, но бит c обнулился, и результат — нулевой:<br>
+abc<br>
+101de<br>
+^11<br>
+   ==<br>
+   00<br>
+<br>
+То же самое ты можешь написать для 110 и 111. Довольно муторное дело, но в нем нет ничего сложного. Сделаем массив T с индексами от 000 до 111, в котором будем хранить результаты наших вычислений:<br>
+<br>
+индекс	значение<br>
+000	00<br>
+001	11<br>
+010	01<br>
+011	10<br>
+100	10<br>
+101	00<br>
+110	11<br>
+111	00<br>
+<br>
+Теперь рассчитать CRC можно, что называется, в два притопа, три прихлопа. Смотри:<br>
+<br>
+de ^= t[abc]; // Код условный, не рабочий.<br>
+gh ^= t[def]; // t — массив, abc def ghi — сообщение<br>
+crc = ghi;<br>
+<br>
+Если вынести текущий изменяемый байт в отдельную переменную, расширить байт до 8 бит и взять 32-битный полином, получим почти готовый код для расчета
+CRC:<br>
+<br>
+<font size="1" color="#008000">static const long t[256] = {<br>
+0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419,<br>
+0x706af48f, 0xe963a535, 0x9e6495a3, 0x0edb8832, 0x79dcb8a4,<br>
+0xe0d5e91e, 0x97d2d988, 0x09b64c2b, 0x7eb17cbd,<br>
+// </font><font size="1" color="#FF0000"> И так далее, все 256 элементов смотри в коде к статье</font><font size="1" color="#008000"><br>
+}<br>
+<br>
+unsigned long CRCCount(char* buff, size_t bufflen)<br>
+{<br>
+	unsigned long crc = CRCINIT;<br>
+	while(bufflen--)<br>
+		crc = t[crc >> 24] ^ ((crc << 8) | *buff++));<br>
+	сrс = t[сrс >> 24] ^ (сrс << 8); // </font><font size="1" color="#FF0000"> Подчищаем «хвосты»</font><font size="1" color="#008000"><br>
+	сrс = t[сrс >> 24] ^ (сrс << 8);<br>
+	сrс = t[сrс >> 24] ^ (сrс << 8);<br>
+	сrс = t[сrс >> 24] ^ (сrс << 8);<br>
+	return ~crc; // </font><font size="1" color="#FF0000"> Вернуть инвертированный crc - см. ниже</font><font size="1" color="#008000"><br>
+}</font><br>
+<br>
+Здесь на каждом шаге мы выбираем элемент из таблицы T по значению старшего байта (crc >> 24) и XOR'им его с очередным байтом. Этот байт у нас каждый раз сдвигается влево, а на его место приходит новый из сообщения (*buff++). Все эти сдвиги нужны для того, чтобы использовать длинный 32-битный полином, который XOR'ится с четырьмя соседними байтами сразу.
+В последних четырех строчках мы проводим через серию XOR'ов и сдвигаем влево оставшийся в младшем байте crc последний байт файла. По правилам вычисления CRC все символы должны «уйти» влево, за пределы переменной. На этом заканчивается вычисление CRC — остатка от деления сообщения на полином в полиномиальной арифметике.
+Итак, в таблице хранятся сдвинутые и проXORенные значения полинома. Конкретные сдвиги зависят от индекса массива, который есть предыдущий байт (abc или crc >> 24), а значение следующего байта (def или (crc << 8) | *buff++) XOR'ится с элементом массива
+t[abc].</p>
+<p><b>Где кончается теория и начинается практика</b></p>
+<p>Что же, простая и быстрая реализация алгоритма для расчета CRC у нас уже есть. Уточним некоторые детали: как выбрать полином и что такое перевернутые алгоритмы.
+Начнем с того, что приведенный выше алгоритм практически всегда преобразуют по некоторым математическим формулам и переписывают так:</p>
+<p><font color="#008000">crc = CRCINIT;<br>
+while (bufflen--)<br>
+	crc = t[(crc >> 24 ^ *buff++) & 0xFF] ^ (crc << 8);</font></p>
+<p>Это позволяет избавиться от четырех последних строчек, хотя не делает алгоритм ни проще, ни быстрее. Кстати, скобки вокруг (crc << 8) необязательны, потому что операция сдвига в Си имеет больший приоритет, чем XOR. Но для удобочитаемости скобки обычно ставят. </p>
+<p>CRCINIT — это начальное значение остатка. Во всех предыдущих рассуждениях оно равнялось нулю (когда мы делим в столбик, предполагается, что слева от старшей цифры делимого записаны нули). Но обычно выбирают CRCINIT=0xFFFF FFFF, чтобы файлы разной длины, состоящие из нулевых байтов, имели разный CRC.<br>
+Как выбрать полином? Лучше предоставить этот выбор математикам, то есть взять один из широко известных полиномов, которые хорошо проверены и уже много лет используются другими программистами. Полином в нашей программе будет задаваться константой
+CRCPOLY.</p>
+<p>Часто используется CRC-32 (32-битный алгоритм) c параметрами CRCINIT=0xFFFF FFFF, CRCPOLY=0xEDB88320. Именно этот алгоритм считает CRC в ZIP, RAR, WinHEX и во многих других программах.
+Этот алгоритм «перевернутый», то есть рассчитан на обработку битов в обратном порядке. По историческим причинам «перевернутые» алгоритмы сейчас встречаются чаще, чем обычные. Реализовать их можно двумя способами. Во-первых, можно переворачивать байт при каждом проходе цикла (это медленно и криво). Другой способ намного лучше. Давай делать все наоборот: выделять младший байт, а не старший, сдвигать на 8 разрядов вправо, а не влево. И перевернем сам полином, то есть запишем его биты в обратном порядке. В результате получится, что мы перевернули все, кроме значений байтов из файла. Образно можно сказать так: вместо того чтобы встать на голову самому, ты переворачиваешь вверх ногами весь остальной мир:<br>
+<br>
+<font size="1" color="#008000">while(bufflen--)<br>
+	crc = t[(crc ^ *buff++) & 0xFF] ^ (crc >> 8);</font><br>
+<br>
+Такой код будет давать перевернутый CRC, и именно его ты скорее всего найдешь на сайтах для программистов и в различных FAQ по CRC. Еще раз повторюсь, что именно так считают CRC большинство программ. </p>
+<p>Из-за путаницы с перевернутыми алгоритмами можно найти описание алгоритма с полиномом 0x04C11DB7 и другого алгоритма с полиномом 0xEDB88320. На самом деле это одно и то же, только авторы первого алгоритма переворачивали байты при каждом проходе цикла, а во втором алгоритме переделали сдвиг (crc << 8) в (crc >> 8), выделили младший байт вместо старшего и записали задом наперед полином:<br>
+<br>
+EDB88320 = 11101101101110001000001100100000<br>
+04C11DB7 = 00000100110000010001110110110111<br>
+<br>
+После вычисления CRC32 его обычно инвертируют (заменяют единицы нулями, а нули единицами). Это записывается либо как crc ^= 0xFFFF FFFF, либо crc = ~crc. Второй вариант быстрее и короче, поэтому мы будем пользоваться им.</p>
+<p><b>Ищем оптимальный алгоритм</b></p>
+<p>Табличная реализация CRC совсем непохожа на деление в полиномиальной арифметике. Еще более забавные вещи начнутся, когда мы будем оптимизировать этот алгоритм.
+Массив t[], конечно, можно рассчитывать заранее и записывать в константы, как показано выше. Но есть более оптимальный путь — генерировать этот массив при запуске программы. На это уходят буквально доли секунды, а программа становится на килобайт (256 элементов умножить на 4 байт) короче:<br>
+<br>
+<font size="1" color="#008000">static unsigned long t[256]; // Таблица для подсчета CRC<br>
+void CRCInit()<br>
+{<br>
+  for (int i = 0; i < 0xFF; i++) // Для каждого элемента T<br>
+  {<br>
+      t[i]=i;<br>
+      for (int j = 8; j > 0; j--) // Для каждого бита<br>
+		if(t[i] & 1) // Если младший бит<br>
+		   t[i] = (t[i]>>1) ^ CRCPOLY;<br>
+		else<br>
+		   t[i] >>= 1;<br>
+  }<br>
+}<br>
+</font><br>
+Особых пояснений этот алгоритм не требует, потому что он делает то же, что мы делали вручную, когда рассчитывали таблицу t[]: проходит по всем битам abcdefhi, и если бит равен единице, XOR'ит следующие биты с полиномом. Длина байта здесь равна 8 символам, а полином 32-битный. Алгоритм перевернутый. В «прямом» алгоритме будет отличаться только вложенный цикл:<br>
+<br>
+<font size="1" color="#008000">          t[i] = i << 24;<br>
+          for (int j = 8; j > 0; j--) // Для каждого бита<br>
+			if(t[i] & 0x80000000) // Если старший бит<br>
+                  t[i] = (t[i]<<1) ^ CRCPOLY;<br>
+			else<br>
+			   t[i] <<= 1;</font><br>
+<br>
+Оба алгоритма можно очень хорошо разогнать, если развернуть вложенный цикл и убрать условие. Я напишу «турбореактивную» версию перевернутого алгоритма, так как почти всегда ты будешь пользоваться именно им:<br>
+<br>
+<font size="1" color="#008000">for (int i = 0; i <= 0xFF; i++)<br>
+{    unsigned long x=i;<br>
+     // Если младший бит установлен, то<br>
+     // -(x & 1) равно -1, если не установлен, нулю.<br>
+     // Соответственно, когда он установлен,<br>
+     // x = (x >> 1) ^ CRCPOLY, иначе<br>
+     // x = (x >> 1) ^ 0 = x >> 1;<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+     x = (x>>1) ^ (CRCPOLY & (-(signed long)(x & 1)));<br>
+     t[i] = x;<br>
+}</font><br>
+<br>
+Эта программа выполняется на Duron-800 за 12 микросекунд, тогда как исходная версия — за 35 мксек. Ускорение просто невероятное, но толку от него немного, потому что инициализация таблицы занимает очень небольшую часть от общего времени работы алгоритма. Проще говоря, 12 микросекунд не отличишь на глаз от тридцати пяти (одна микросекунда — миллионная доля секунды).
+Затем я попробовал частично развернуть цикл подсчета
+CRC:<br>
+<br>
+<font size="1" color="#008000">crc = CRCINIT;<br>
+bufflen /= 4;    // bufflen должно быть кратно 4. Для хвостов<br>
+while(bufflen--) // следует использовать обычный алгоритм<br>
+{	x = *(long*)buff;<br>
+	crc = t[(crc ^ x) & 0xFF] ^ (crc >> 8);<br>
+	crc = t[(crc ^ x >> 8) & 0xFF] ^ (crc >> 8);<br>
+	crc = t[(crc ^ x >> 16) & 0xFF] ^ (crc >> 8);<br>
+	crc = t[(crc ^ x >> 24) & 0xFF] ^ (crc >> 8);<br>
+	buff += 4;<br>
+}<br>
+crc = ~crc; // Инвертировать CRC</font><br>
+<br>
+Это дает некоторый прирост скорости, но этот прирост невелик (не больше 5%). Так или иначе, конечная версия моей программы для подсчета CRC использует именно этот алгоритм и динамическую генерацию таблицы
+t[].</p>
+<p><b>Как защитить свою программу от взлома</b></p>
+<p>Ты можешь подсчитать CRC своего exe'шника, сравнить его с CRC, хранящимся в том же exe'шнике, и убедиться, что программа не была повреждена / взломана. Идея не нова, и она используется, в частности, в Total Commander (на проверке CRC прокололись многие крэкеры, написавшие патчи к
+TC). В exe'шниках DOS и Windows уже предусмотрены поля для контрольной суммы (16-битной по смещению 0x12..0x13 от начала файла и 32-битной по смещению 0x8-0xB от начала PE-заголовка). Самым простым вариантом будет использовать их. В компоновщике Link для MSVC++ предусмотрена опция /RELEASE, которая заставляет пересчитывать контрольную сумму после каждой компиляции программы. А Win32 API имеет функцию MapFileAndCheckSum для проверки этой суммы. Если нужно защитить программу от повреждений и вирусов, это действительно лучший вариант — всего-то пара строчек кода.
+Но такая «защита» не остановит ни одного крэкера. Придется придумать что-нибудь получше, а именно считать CRC самостоятельно. В заголовке exe'шника есть куча неиспользуемых и зарезервированных полей, в которые можно записать CRC. Я выбрал поле 0x2C из заголовка MS-DOS. Чтобы не получилось так, что CRC файла изменился из-за того, что мы вписали в этот же файл CRC, будем считать CRC начиная со смещения 0x40 (пропускаем заголовок MS-DOS). Получаем имя данного exe'шника функцией GetModuleFileName, открываем его, подсчитываем CRC и сравниваем с хранящимся в файле:</p>
+<p><font size="1" color="#008000">#define QUANT 1024 // Читать по 1024 байт файла<br>
+#define CRCPOLY 0xEDB88320<br>
+#define CRCINIT 0xFFFFFFFF<br>
+int CRCCheckThisExe()<br>
+{ // </font><font size="1" color="#FF0000"> Проверить целостность exe (возвращает 1,</font><font size="1" color="#008000"><br>
+  // </font><font size="1" color="#FF0000"> если программа была изменена)</font><font size="1" color="#008000"><br>
+	char FileName[MAX_PATH]; HANDLE hFile; DWORD bytesread;<br>
+	char data[QUANT], *p; unsigned long crc, x;<br>
+<br>
+	GetModuleFileName(NULL, FileName, MAX_PATH);<br>
+	hFile = CreateFile(FileName, GENERIC_READ, FILE_SHARE_READ,<br>
+			NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL |<br>
+			FILE_FLAG_SEQUENTIAL_SCAN, NULL);<br>
+	if(hFile == INVALID_HANDLE_VALUE)<br>
+		return 0;<br>
+	// </font><font size="1" color="#FF0000"> Читать со смещения 40</font><font size="1" color="#008000"><br>
+	SetFilePointer(hFile, 0x40, NULL, FILE_BEGIN);<br>
+	CRCInit(); // </font><font size="1" color="#FF0000"> Создать массив t</font><font size="1" color="#008000"><br>
+	crc = CRCINIT;<br>
+	for(;;) // </font><font size="1" color="#FF0000"> Подсчет CRC</font><font size="1" color="#008000"><br>
+	{<br>
+		ReadFile(hFile, data, QUANT, &bytesread, NULL);<br>
+		p = data;<br>
+		if(bytesread != QUANT) // </font><font size="1" color="#FF0000"> Досчитываем остаток</font><font size="1" color="#008000"><br>
+		{<br>
+			while(bytesread--)<br>
+				crc = t[(crc ^ *p++) & 0xFF] ^ (crc >> 8);<br>
+			break; // </font><font size="1" color="#FF0000"> Выйти, когда файл закончился</font><font size="1" color="#008000"><br>
+		}<br>
+		// Так как bytesread == QUANT, bytesread кратно 4<br>
+		bytesread /= 4;<br>
+		while(bytesread--)<br>
+		{	x = *(long*)p;<br>
+			crc = t[(crc ^ x) & 0xFF] ^ (crc >> 8);<br>
+			crc = t[(crc ^ x >> 8) & 0xFF] ^ (crc >> 8);<br>
+			crc = t[(crc ^ x >> 16) & 0xFF] ^ (crc >> 8);<br>
+			crc = t[(crc ^ x >> 24) & 0xFF] ^ (crc >> 8);<br>
+			p += 4;<br>
+		}<br>
+	}<br>
+	// </font><font size="1" color="#FF0000"> Считать CRC из файла и сравнить с рассчитанным</font><font size="1" color="#008000"><br>
+	SetFilePointer(hFile, 0x2C, NULL, FILE_BEGIN);<br>
+	x = 0;<br>
+	ReadFile(hFile, &x, sizeof(x), &bytesread, NULL);<br>
+	CloseHanlde(hFile);<br>
+	return x != crc;<br>
+}</font><br>
+<br>
+Как показывает опыт, на скорость расчета CRC сильно влияет размер считываемого куска QUANT. Я получал хорошие результаты при QUANT = 1024 и QUANT = 2048. Ты можешь подобрать другие значения. По идее, они должны быть кратны размеру сектора диска (512 байт), но можно еще попробовать учесть, что мы считываем файл не с начала, а со смещения 0x40.</p>
+<p>Считает и записывает CRC в exe'шник отдельная программа, CRCMaker. Ее можно прописать в свойства проекта (Post-build step), чтобы после каждой компиляции CRC пересчитывался автоматически.
+Чтобы усилить защиту, нужно «размазать» вычисление CRC по всей твоей программе. При запуске программы вызови GetModuleFileName и сохрани путь в глобальной переменной. Затем где-то в другом месте открой файл и начни подсчет CRC. Хороших результатов можно добиться, если подсчитывать CRC при простое программы (когда пользователь не работает с клавиатурой и мышью или когда переключился в другую программу). Два значения CRC — рассчитанное и взятое из файла — нужно записать в глобальные переменные и в нескольких точках программы сверять между собой. Лучше не выдавать никаких предупреждающих сообщений, а сразу выходить из программы. Все это более или менее обезопасит твою прогу от цепких лап любителей
+SoftIce.</p>
+<p><b>Что еще почитать на тему CRC</b></p>
+<p>Ross Williams. A painless guide to CRC error detection algorithms. — <a href="ftp://www.internode.net.au/clients/rocksoft/papers/crc_v3.txt">ftp://www.internode.net.au/clients/rocksoft/papers/crc_v3.txt</a>
+(русский перевод см. <a href="http://www.rsdn.ru/article/files/classes/SelfCheck/crcguide.pdf">http://www.rsdn.ru/article/files/classes/SelfCheck/crcguide.pdf</a>). Очень подробное описание принципа подсчета CRC, но не слишком оптимальные алгоритмы. Можно почитать, если ты хочешь разобраться в математических подробностях.</p>
+<p>FAQ по CRC. — <a href="http://faqs.org.ru/progr/common/crc_faq.rar">http://faqs.org.ru/progr/common/crc_faq.rar</a>. Самые короткие и вразумительные алгоритмы вычисления CRC из всех, что я встречал. На Си, Паскале, ассемблере. Там же — как взломать CRC (подобрать сообщение под заданный
+CRC).</p>
+<p>Алексей Кирюшкин. Защита исполняемых файлов от искажений. —
+<a href="http://www.rsdn.ru/article/files/classes/selfcheck.xml" target="_blank">http://www.rsdn.ru/article/files/classes/selfcheck.xml</a>. Автор предлагает хранить CRC в разделе данных и находить его по некоторой сигнатуре. Неплохой способ, хотя он немного сложнее, чем хранение CRC в заголовках exe'шника.<br>
+<br>
+Скачать пример программы <a href="http://www.xakep.ru/post/21788/code.rar"> можно отсюда</a>. Программа XakepCRC проверяет CRC файлов, но она также защищает себя от взлома с помощью CRC. Заголовочные файлы из каталога CRClib ты можешь использовать в своих программах.</p><!-- bodypostend -->
+<br><br>
+  <br>
+  <br>
+  
+    <iframe ID="anIframe3" NAME="anIframe3" scrolling="no"  frameborder="0" width="440" marginwidth="0" marginheight="0" src="http://www.xakep.ru/local/include/iframe_rateit.asp?filedir=21788&title=CRC: как защитить программу&tosearch=zHOMEz, zDEFENCEz, zSOFTz, zHOWz, zINFOz&backto=http://www.xakep.ru/post/21788/default.asp"></iframe>
+  <span class="textBodySm2"><br>Keywords: zPOSTz <!-- themepostbegin -->zHOMEz, zDEFENCEz, zSOFTz, zHOWz, zINFOz<!-- themepostend --> <!-- threadpostbegin --><!-- threadpostend --> <!-- code_catpostbegin --><!-- code_catpostend --> <!-- filedirpostbegin -->z21788z<!-- filedirpostend --><br>Для Авторов: <a href="http://www.xakep.ru/local/redirect.asp?url=local/admin/post/default.asp?filedir=21788">edit</a>  <img src="lock0000.gif" width="16" height="15" alt="Lock" align="middle"> <a href="http://www.xakep.ru/local/redirect.asp?url=local/admin/post/delete.asp?filedir=21788">delete</a> <img src="lock0000.gif" width="16" height="15" alt="Lock" align="middle"> </span><br>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width="1" class="decorCellBlue"><img src="fon00000.gif" width="1" height="1"></td>
+      <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+      <td width="173" align="left" valign="top" class="decorCellBlue">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center" valign="top" height="25">
+              <!-- iframe ID="anIframe4" NAME="anIframe4" scrolling="no"  frameborder="0" width="165" marginwidth="0" marginheight="0" src="http://rateit.glc.ru/default.asp?filedir=21788&title=CRC: как защитить программу&tosearch=zHOMEz, zDEFENCEz, zSOFTz, zHOWz, zINFOz&backto=http://www.xakep.ru/post/21788/default.asp"></iframe> -->
+            </td>
+          </tr>
+          <td align="center">
+<center>
+<script language="JavaScript">
+<!--
+var fver = 7;
+var d = document;
+var fappVer = parseFloat(navigator.appVersion);
+var targetie = (navigator.userAgent.indexOf("Windows 95")>=0 || navigator.userAgent.indexOf("Windows 98")>=0 || navigator.userAgent.indexOf("Windows NT")>=0)&&(navigator.userAgent.indexOf('Opera')==-1)&&(navigator.appName != 'Netscape')&&(navigator.userAgent.indexOf('MSIE') > -1)&&(fappVer >=4);
+var cache_rnd = Math.round(Math.random() * 1000000000);
+
+var ShockMode = 0;
+var plugin = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+ if (plugin && parseInt(plugin.description.substring(plugin.description.indexOf(".")-1)) >= fver)  {
+	 ShockMode = 1;
+ } else if (targetie) {
+	document.write('<SC'+'RIPT LANGUAGE=VBScript\> \n');
+	document.write('on error resume next \n');
+	document.write('ShockMode = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.'+fver+'")))\n');
+	document.write('<\/SC'+'RIPT\> \n');
+ }
+
+if (ShockMode == 1){
+	document.write('<sc'+'ript src="http://body.imho.ru/html.ng/impt=imp&place=xakep160x450flash&id=28040650&transactionID='+cache_rnd+'"></sc'+'ript>');
+}else{
+	document.write('<a href="http://body.imho.ru/click.ng/impt=imp&place=xakep160x450gif&id=28040650&transactionID='+cache_rnd+'" target=_blank><img src="http://body.imho.ru/image.ng/impt=imp&place=xakep160x450gif&id=28040650&transactionID='+cache_rnd+'" border=0 width=160 height=450></a>');
+}
+//-->
+</script>
+<noscript>
+<a href="http://body.imho.ru/click.ng/impt=imp&place=xakep160x450gif&id=28040650" target=_blank><img src="http://body.imho.ru/image.ng/impt=imp&place=xakep160x450gif&id=28040650" border=0 width=160 height=450></a>
+</noscript>
+</center><br>
+         </td>
+         <tr>
+            <td align="left" valign="top" class="decorBodyCell" background="../../i/splitter-left.gif" height="30"><img src="fon00000.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" class="decorBodyCell1" height="21">
+
+              <span class="textAuthor">
+  Автор: <!-- emailpostbegin --><a href="mailto:kankowski@nm.ru"><!-- emailpostend --><!-- authorpostbegin -->Петр<!-- authorpostend --></a><br><span class="textDate">Дата: 30.03.2004 18:32:24©</span>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" class="decorBodyCell" background="../../i/splitter-left.gif" height="30"><img src="fon00000.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" class="decorBodyCell1" height="21">
+              <span class="textBody">
+              <a href="http://www.xakep.ru/local/redirect.asp?url=post/21788/default.asp?print=1"><img src="toprint0.gif" height="16" width="16" border="0"></a> <a href="http://www.xakep.ru/local/redirect.asp?url=post%2F21788%2Fdefault%2Easp%3Fprint%3D1">Версия для печати</a><br>
+              <a href="mailto:?subject=%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.%20%D0%AF%20%D0%B4%D1%83%D0%BC%D0%B0%D1%8E,%20%D1%82%D0%B5%D0%B1%D1%8F%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%B0%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F%20CRC:%20%D0%BA%D0%B0%D0%BA%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B8%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0:%20%D0%9F%D0%B5%D1%82%D1%80%20%D1%81%20Xakep%20Online.%20%D0%A0%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BE%20%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D1%83:%20http://www.xakep.ru/post/21788/default.asp"><img src="mailto00.gif" height="16" width="16" border="0"></a> <a href="mailto:?subject=%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%B0%D1%8F%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F&body=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.%20%D0%AF%20%D0%B4%D1%83%D0%BC%D0%B0%D1%8E,%20%D1%82%D0%B5%D0%B1%D1%8F%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%B0%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F%20CRC:%20%D0%BA%D0%B0%D0%BA%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B8%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%83%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B0:%20%D0%9F%D0%B5%D1%82%D1%80%20%D1%81%20Xakep%20Online.%20%D0%A0%D0%B0%D1%81%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BE%20%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D1%83:%20http://www.xakep.ru/post/21788/default.asp">Отправить другу</a>
+              </span>
+            </td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top" class="decorBodyCell" background="../../i/splitter-left.gif" height="30"><img src="fon00000.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" class="decorBodyCell1" height="21">
+            <iframe ID="anIframe2" NAME="anIframe2" scrolling="no" frameborder="0" width="150" marginwidth="0" marginheight="0" src="http://www.xakep.ru/local/include/iframe_nppost.asp?tosearch=zHOMEz, zDEFENCEz, zSOFTz, zHOWz, zINFOz&create_date=30.03.2004 18:32:24"></iframe>
+  
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" class="decorBodyCell" background="../../i/splitter-left.gif" height="30"><img src="fon00000.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" height="30" style="padding-top:7px;padding-bottom:7px">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+<!-- ...И мимо шли годы, а ламер все читал и читал исходник... -->
+
+    </td>
+    <td width="7" align="left" valign="top" background="../../i/fon-right.gif">
+    
+    </td>
+  </tr>
+</table>
+
+<table width="770" height="1" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="121"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="467" class="decorCellBlue"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="173" class="decorCellBlue"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="5" class="decorCellBlue"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td width="121"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="467" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="173" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="5" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+    <td width="1" class="decorCellWhite"><img src="fon00000.gif" width="1" height="1"></td>
+  </tr>
+</table>
+
+<table width="770" height="70" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="121" valign="bottom" class="textBody" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7px; font-style: normal; font-weight: bold; color: #FFFFFF">&nbsp;
+    <br>ПРАВА ООО ГЕЙМ ЛЭНД&nbsp;&nbsp;&nbsp;
+    <br><iframe scrolling="no" frameborder="0" width="90" height="15" marginwidth="0" marginheight="0" src="http://counter.glc.ru/default.asp?url=http://www.xakep.ru/post/21788/default.asp&path=/post/21788/default.asp&hit=&ttl=&qstring="></iframe>
+    </td>
+    <td width="478" align="right" valign="bottom">
+   <!--LiveInternet counter--><script language="JavaScript"><!--
+document.write('<a href="http://www.liveinternet.ru/click" '+
+'target=_blank><img src="http://counter.yadro.ru/hit?t39.11;r'+
+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+';'+Math.random()+
+'" title="LiveInternet" '+
+'border=0 width=31 height=31></a>')//--></script><!--/LiveInternet-->&nbsp;
+    <!-- SpyLOG v2 f:0201 -->
+      <script language="javascript">
+      u="u220.99.spylog.com";d=document;nv=navigator;na=nv.appName;p=1;
+      bv=Math.round(parseFloat(nv.appVersion)*100);
+      n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random(); z="p="+p+"&rn="+rn;y="";
+      y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>";
+      y+="<img src='http://"+u+"/cnt?"+z+
+      "&r="+escape(d.referrer)+ "&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>";
+      y+="</a>"; d.write(y); if(!n) { d.write("<"+"!--"); } //--></script><noscript>
+      <a href="http://u220.99.spylog.com/cnt?f=3&p=1" target=_blank><img src="http://u220.99.spylog.com/cnt?p=1" alt='SpyLOG' border='0' width=88 height=31></a></noscript><script language="javascript1.2"><!--if(!n) { d.write("--"+">"); }//--></script>
+  <!-- SpyLOG -->
+  <!--begin of Top100 logo-->
+  <a href="http://top100.rambler.ru/top100/"><img src="banner-8.gif" alt="Rambler's Top100" width=88 height=31 border=0></a>
+    <!--end of Top100 logo -->
+    <!--begin of Rambler's Top100 code -->
+    <a href="http://top100.rambler.ru/top100/"><img src="top10000.gif" alt="" width=1 height=1 border=0></a>
+  <!--end of Top100 code-->
+    </td>
+    <td width="171" align="right" valign="bottom" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 7px; font-style: normal; font-weight: bold; color: #FFFFFF"><br>
+
+</td>
+  </tr>
+</table>
+<br>
+
+
+<table width="768" border="2" cellpadding="0" cellspacing="0" bordercolordark="#FFFFFF" bordercolorlight="#FFFFFF" style="border-collapse: collapse" bordercolor="#111111" height="39">
+  <tr>
+    <td width="768" height="39"><img src="bot_01_0.gif" width="77" height="20"><img src="bot_02_0.gif" width="77" height="20"><img src="bot_03_0.gif" width="76" height="20"><img src="bot_04_0.gif" width="77" height="20"><img src="bot_05_0.gif" width="77" height="20"><img src="bot_06_0.gif" width="77" height="20"><img src="bot_07_0.gif" width="77" height="20"><img src="bot_08_0.gif" width="76" height="20"><img src="bot_09_0.gif" width="77" height="20"><img src="bot_10_0.gif" width="77" height="20"><img src="bot_11_0.gif" width="77" height="19"><img src="bot_12_0.gif" width="77" height="19"><img src="bot_13_0.gif" width="76" height="19"><img src="bot_14_0.gif" width="77" height="19"><img src="bot_15_0.gif" width="77" height="19"><img src="bot_16_0.gif" width="77" height="19"><img src="bot_17_0.gif" width="77" height="19"><img src="bot_18_0.gif" width="76" height="19"><img src="bot_19_0.gif" width="77" height="19"><img src="bot_20_0.gif" width="77" height="19"></td>
+  </tr>
+</table>
+  
+<!-- =========bot end============ -->
+<br>    </td>
+    <td align="left" valign="top"  width="100%">
+    <!--:::::-->
+    &nbsp;
+    </td>
+  </tr>
+</table>
+
+<!-- Ну и настырен же ты!... Все понял? Если нет - не отчаивайся; многое людям понять не дано... -->
+
+</body>
+</html>
+
+<!-- This document saved from http://www.xakep.ru/post/21788/default.asp -->
